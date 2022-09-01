@@ -21,7 +21,7 @@ while len(guess) != len(secret):
 # If the letter and index match, a green box emoji is added to "result". 
 while index < len(guess):
     if guess[index] == secret[index]:
-        result = f"{result}{GREEN_BOX}"
+        result = result + GREEN_BOX
     else:
         # If not, a a variable reports on whether the character exists in the word (initally set to false).
         # The variable "alt_index" keeps track of the secret's index in the loop.
@@ -36,9 +36,9 @@ while index < len(guess):
         # If the guess's character matches one of the secret's characters, a yellow box emoji is added to "result".
         # If not, a white box is printed.
         if character_exists is True:
-            result = f"{result}{YELLOW_BOX}"
+            result = result + YELLOW_BOX
         else:
-            result = f"{result}{WHITE_BOX}"
+            result = result + WHITE_BOX
     index = index + 1
 
 print(result)
