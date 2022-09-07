@@ -7,7 +7,7 @@ GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
 
 # The variable "secret" is assigned to the secret word and "guess" is assigned to the user's guess.
-# The index is assigned to the user's guess and the result is the output.
+# The index variable keeps track of the index of the guess word or secret word and the result is the output.
 secret: str = "python"
 guess: str = input(f"What is your {len(secret)}-letter guess? ")
 index: int = 0
@@ -19,7 +19,7 @@ while len(guess) != len(secret):
 
 # This loop tests if the letters in the guess match the letters of the secret word.
 # If the letter and index match, a green box emoji is added to "result". 
-while index < len(guess):
+while index < len(secret):
     if guess[index] == secret[index]:
         result = result + GREEN_BOX
     else:
