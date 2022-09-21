@@ -1,4 +1,4 @@
-""""""
+"""This program contains three functions to modify lists."""
 
 __author__ = "730548982"
 
@@ -18,8 +18,12 @@ def only_evens(input_list: list[int]) -> list[int]:
 
 def concat(list_one: list[int], list_two: list[int]) -> list[int]:
     """This function concatenates list_two to the end of list_one."""
-    output_list: list[int] = list_one
+    output_list: list[int] = []
     i: int = 0
+    while i < len(list_one):
+        output_list.append(list_one[i])
+        i += 1
+    i = 0
     while i < len(list_two):
         output_list.append(list_two[i])
         i += 1
