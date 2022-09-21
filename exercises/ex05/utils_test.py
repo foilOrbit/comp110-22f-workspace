@@ -3,7 +3,6 @@
 __author__ = "730548982"
 
 from exercises.ex05.utils import only_evens, concat, sub
-from test import pytest
 
 def test_only_evens_empty() -> None:
     """This function checks if only_evens works with an empty list."""
