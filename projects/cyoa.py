@@ -31,6 +31,7 @@ def main() -> None:
             attack()  
         else:
             # Calls the RNG smite function
+            # This is the custom function
             divine_dmg: int = divine_intervention(points)
             if divine_dmg == 0:
                 print("Sorry, the stars did not align! No damage dealt.")
