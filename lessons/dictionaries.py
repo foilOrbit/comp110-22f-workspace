@@ -52,4 +52,6 @@ schools = {
 print(schools)
 
 # What happens when a key doesn't exist?
-print(schools["UNCC"])
+# print(schools["UNCC"])
+for key in schools:
+    print(f"Key: {key} -> Value: {schools[key]}")
