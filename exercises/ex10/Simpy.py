@@ -110,7 +110,7 @@ class Simpy:
         """Returns item at index of Simpy's values that is greater than an int or is ."""        
         result: Simpy = Simpy([])
         if isinstance(rhs, int):
-            return self.values[rhs]  
+            return self.values[rhs]
         else:
             for i in range(len(self.values)):
                 if rhs[i]:
